@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"890001000024106175",
+		"product_id":"9105385871708459226",
+		"client_id":"295339850196845760",
+		"client_secret":"513E1602F235D01DC981DE15325380534823DCB6B149746B5FFCD614AF5D016E",
+		"app_id":"101712283",
+		"package_name":"com.pushsundy01.huawei",
+		"api_key":"CV5rAt5a6ulXRwdAAszh6xK/7z7Vlk9Wsn0h0I22gCKxiTGRTio6Wup1t2Rp/MdZjXbBOgNk24VuCCqodgIvegQGH4li"
+	},
+	"configuration_version":"1.0"
+}
