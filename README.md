@@ -10,6 +10,7 @@
 
 ## Introduction  
 This demo showcases the integration process and functions of Huawei Push Kit with supporting big picture. Below screenshots are the app home page and received big picture data push message on Huawei HMS(Huawei mobile service) Phone Mate 30 pro.
+
 ![image](https://user-images.githubusercontent.com/57116184/200088521-89e943f0-fa0d-4702-93f5-71a992a22198.png)
 ## Setup
 A Huawei Developer Account is needed to access and configure Huawei Push Kit. You will need to create an account if you don't already have one. Please refer to this  [guide](https://developer.huawei.com/consumer/en/doc/help/registerandlogin-0000001052613847).
