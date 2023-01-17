@@ -26,6 +26,8 @@ A Huawei Developer Account is needed to access and configure Huawei Push Kit. Yo
 * Replace **xxxxx.xxx or xxxxx** in the app-level build.gradle(line 30/31/32/33) with your own file, keyAlias, keyPassword and storePasssords. For details about how to obtain the public key, please refer to [Generating a Signing Certificate Fingerprint](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-config-agc-0000001050170137).
 6. Run the sample code on an Android device or simulator.
 7. Refer to the [documentation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-basic-sendtestmsg-0000001087842114) for sending test messages.
+![image](https://user-images.githubusercontent.com/57116184/212972495-37953076-e5b2-402c-90d3-a7216e5c970f.png)
+
 
 ## Environment Requirements  
 
