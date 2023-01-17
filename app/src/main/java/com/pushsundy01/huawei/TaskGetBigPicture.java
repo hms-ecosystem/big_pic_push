@@ -41,9 +41,14 @@ public class TaskGetBigPicture {
         return bmp;
     }
     private Bitmap getNotificationBitmap(String url){
-        Bitmap bitmap=getBitmap(url);
-        return getResizedBitmap(bitmap,200,400);
-    }
+        try {
+            Bitmap bitmap = getBitmap(url);
+            return getResizedBitmap(bitmap, 200, 400);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+}
     private  Bitmap getBitmap( String imageUrl){
         try {
             URL url= new URL(imageUrl);
@@ -68,8 +73,8 @@ public class TaskGetBigPicture {
     private Bitmap getResizedBitmap( Bitmap bitmap, int newHeight, int newWidth)  {
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
-        Float scaleWidth = new Float(newWidth) / width;
-        Float scaleHeight = new Float(newHeight) / height;
+        float scaleWidth = (float) newWidth / width;
+        float scaleHeight = (float) newHeight / height;
 
         // CREATE A MATRIX FOR THE MANIPULATION
         Matrix matrix = new Matrix();

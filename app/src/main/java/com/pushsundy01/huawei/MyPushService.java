@@ -50,18 +50,10 @@ public class MyPushService extends HmsMessageService {
             displayNotification(remoteMessage);
         } catch (ExecutionException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 
-    @Override
-    public void onMessageSent(String s) {
-    }
-    @Override
-    public void onSendError(String s, Exception e) {
-    }
-    private void displayNotification(RemoteMessage message) throws ExecutionException, InterruptedException {
+    private void displayNotification(RemoteMessage message) throws ExecutionException{
 
         String strTitle="", strMsgBody="",  strBigImageOrPicUri="";
         String CHANNEL_ID = "PUSH_CHANNEL_TEST";
@@ -97,6 +89,9 @@ public class MyPushService extends HmsMessageService {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }else{
+            Log.e("error push", "Build.VERSION.SDK_INT:"+ Build.VERSION.SDK_INT +" must greater or equal 9!"  );
+            return;
         }
         manager.notify(1,noteficationBuilder.build());
     }

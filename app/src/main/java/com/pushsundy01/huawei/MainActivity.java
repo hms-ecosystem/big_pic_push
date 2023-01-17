@@ -33,7 +33,6 @@ import com.huawei.hms.common.ApiException;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "PushDemoLog";
     private String CHANNEL_ID = "PUSH_CHANNEL_TEST";
-    private Button btnToken;
     private String pushtoken = "";
     TextView tvView=null;
 
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         createNotificationChannel();  //create push channel;
     }
-   ///** * get token */
     private void getToken() {
         Log.i(TAG, "get token: begin");
         // get token
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     if(!TextUtils.isEmpty(pushtoken)) {
                         Log.i(TAG, "get token:" + pushtoken);
                     }
-                    runOnUiThread(new Runnable() {//
+                    runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             tvView = findViewById(R.id.tv_log);
