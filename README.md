@@ -34,7 +34,7 @@ A Huawei Developer Account is needed to access and configure Huawei Push Kit. Yo
 Minumum Android SDK 22 and JDK 1.8 are recommended.
 
 ## License
-NA
+This Android sample code is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Acknowledgements
 Some codes in this project has been borrowed from Huawei official website [Huawei Push](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-introduction-0000001050040060) and some public website posts. Thanks for their working. 
